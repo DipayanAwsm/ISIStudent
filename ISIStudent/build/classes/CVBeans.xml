@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "helloWorld" class = "com.dipayan.HelloWorld">
+      <property name = "message" value = "Hello World!"/>
+   </bean>
+   
+   <bean id="profileList" class="com.dipayan.profileList.ProfileList" scope="singleton">
+	  
+	   <property name="profileList">
+	  	  <list>
+            <value>dipayan</value>
+            <value>abhijit</value>
+            <value>shayak</value>
+            <value>kushal</value>
+            <value>OtherDudes</value>
+            
+         </list>
+	  
+	   </property>
+   </bean>
+
+</beans>
